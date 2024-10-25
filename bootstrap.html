@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importing bootstrap from getbootstrap.com -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3
+    "
+      crossorigin="anonymous"
+    />
+    <!-- Link map -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <title>Sherubtse College</title>
+  </head>
+
+  <body>
+    <!--Navigation-->
+    <nav
+      class="navbar navbar-expand-sm bg-dark bg-gradient navbar-dark fixed-top"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">Sherubtse College</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item">
+              <a href="#header" class="nav-link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#About" class="nav-link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#map" class="nav-link">Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--creating header section flex-->
+    <section
+      id="header"
+      class="bg-dark text-light p-5 text-start text-lg-center"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between mt-3">
+          <div>
+            <h3>Sherubtse College</h3>
+            <h4>Our College Education Values</h4>
+            <p class="lead">
+              Sherubtse College is a university in Bhutan. It offers higher education, mainly focusing on arts, sciences, and business studies. The campus is in Kanglung, a beautiful hill town. Students from all over Bhutan attend.
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#apply"
+            >
+              Apply Here
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block mx-4"
+            src="sherubtse.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!--modal from getbootstrap.com-->
+    <div
+      class="modal fade"
+      id="apply"
+      tabindex="-1"
+      aria-labelledby="exampleModallabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Application form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <from action="#">
+              <div class="mb-3">
+                <label for="name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="feedback" class="col-form-label">Feedback:</label>
+                <input type="textarea" class="form-control" id="feedback" />
+              </div>
+            </from>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--creating grid layout section-->
+    <section id="About" class="p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-8">
+            <div class="row mb-2">
+              <div class="col-md-6 col-sm-12 mb-2">
+                <div class="card bg-secondary text-light">
+                  <div class="card-body text-center">
+                    <div class="h1">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-2">Kinzang dorji</h3>
+                    <p class="card-text">
+                      Hello, my name is Kinzang dorji and i m currently in sherubtse college, pursuing DSDA course.
+                    </p>
+                    <a href="" class="text-warning">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="card bg-secondary text-light">
+                  <div class="card-body text-center">
+                    <div class="h1">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-2">Hobby</h3>
+                    <p class="card-text">
+                      I love to play football and basketball.
+                    </p>
+                    <a href="" class="text-warning">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-12 mb-2">
+                <div class="card bg-secondary text-light">
+                  <div class="card-body text-center">
+                    <div class="h1">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-2">hometown</h3>
+                    <p class="card-text">
+                      I'm from Paro.
+                    </p>
+                    <a href="" class="text-warning">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 mb-2">
+                <div class="card bg-secondary text-light">
+                  <div class="card-body text-center">
+                    <div class="h1">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3 class="card-title mb-2">Yeshey drayang</h3>
+                    <p class="card-text">My name is Yeshey drayang, currently studing in sherubtse and love to play baskeyball.</p>
+                    <a href="" class="text-warning">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 mb-2">
+                <div class="card bg-secondary text-light">
+                  <div class="card-body text-center">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <h3 class="card-title mb-2">Hometown</h3>
+                  <p class="card-text">
+                    I am from Gelephu.
+                  </p>
+                  <a href="" class="text-warning">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 p-4 pt-0 bg-dark">
+            <h2 class="text-center mb-4">Contact</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold"> Office Address:</span><br />Sherubtse
+                College, Royal University of Bhutan
+                sherubtse PO 58000, Kanglung, Trashigang, Bhutan
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Message Us:</span
+                ><br />info.sherubtse@rub.edu.bt
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Web Admins:</span
+                ><br />ict.sherubtse@rub.edu.bt
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map ----------------------# -->
+    <section id="map" class="bg-info pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2 class="text-center text-dark md-4">
+              Frequently Asked Questions
+            </h2>
+            <!-- Get accordian from getbootstrap.com -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What do you love to do?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body bg-secondary">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Why things are hard for sometimes?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body bg-secondary">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    What do you think about this college?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body bg-secondary">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="col-md -6 col-sm-12">
+            <h2 class="text-center text-dark mb-4">Location Map</h2>
+            <!-- In real world : we need to buy api of map -->
+            <div
+              id="map"
+              style="width: 100%; height: 300px; border-radius: 10px"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Card Task #########-->
+    <section id="contact">
+      <div class="p-4 bg-secondary">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-light text-center">Our College Student</h2>
+              <p class="text-center text-light">
+                Meet my CSP Team
+              </p>
+              <div class="row">
+                <!-- Card1 -->
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-secondary">
+                  <div class="card bg-light rounded m-2 px-4">
+                    <div class="img-circle rounded">
+                      <img
+                        class="img-fluid rounded-circle m-4 d-sm-block mx-auto"
+                        src="drayang.jpg"
+                        alt="yeshey"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h6
+                        class="card-title text-center text-dark text-uppercase"
+                      >
+                        Yeshey drayang
+                      </h6>
+                      <p
+                        class="card-text text-center text-dark text-capitalize"
+                      >
+                        Teacher
+                        17875433
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card2 -->
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-secondary">
+                  <div class="card bg-light rounded m-2 px-4">
+                    <div class="img-circle rounded">
+                      <img
+                        class="img-fluid rounded-circle m-4 d-sm-block mx-auto"
+                        src="paks.jpg"
+                        alt="Kinzang"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h6
+                        class="card-title text-center text-dark text-uppercase"
+                      >
+                        Kinzang dorji
+                      </h6>
+                      <p
+                        class="card-text text-center text-dark text-capitalize"
+                      >
+                       CEO
+                       17982078
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card3 -->
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-secondary">
+                  <div class="card bg-light rounded m-2 px-4">
+                    <div class="img-circle rounded">
+                      <img
+                        class="img-fluid rounded-circle m-4 d-sm-block mx-auto"
+                        src="drayang.jpg"
+                        alt="Yeshey"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h6
+                        class="card-title text-center text-dark text-uppercase"
+                      >
+                        Yeshey drayang
+                      </h6>
+                      <p
+                        class="card-text text-center text-dark text-capitalize"
+                      >
+                         Co-founder
+                         17982078
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card4 -->
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-secondary">
+                  <div class="card bg-light rounded m-2 px-4">
+                    <div class="img-circle rounded">
+                      <img
+                        class="img-fluid rounded-circle m-4 d-sm-block mx-auto"
+                        src="paks.jpg"
+                        alt="kinzang"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h6
+                        class="card-title text-center text-dark text-uppercase"
+                      >
+                        Kinzang
+                      </h6>
+                      <p
+                        class="card-text text-center text-dark text-capitalize"
+                      >
+                        Coodinator
+                        17982078
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Importing bundle.min.js from getbootstrap.com -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p
+ "
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script for the map -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoia2lubGV5MTIzIiwiYSI6ImNsMWw2NjF2ajA3azgzY2p4NTlkaWRzMTgifQ.-M5mEG19lziihXoGXQMlsg";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v11", // style URL
+        center: [89.67245915040657, 27.539603712201736], // starting position [lng, lat]
+        zoom: 10, // starting zoom
+      });
+    </script>
+  </body>
+</html>

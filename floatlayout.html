@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {box-sizing: border-box;}
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 5px;
+                background: #f1f1f1;
+                .header {
+                    padding: 5px;
+                    text-align: center;
+                    color: rgb(11, 11, 11);
+                    background: #745f3d;
+                }
+                .topnav {
+                    overflow: hidden;
+                    background-color: #836f5e;
+                }
+                .topnav a {
+                    float: left;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                .topnav a:hover {
+                    color: #0e0f0f;
+                }
+                .leftcolumn {
+                    float: left;
+                    width: 20%;
+                    padding: 5px;
+                }
+                .middlecolumn {
+                    float: left;
+                    width: 60%;
+                    padding: 5px;
+                }
+                .rightcolumn {
+                    float: left;
+                    width: 20%;
+                    background-color: #f1f1f1;
+                    padding: 5px;
+                }
+                .fakeimg {
+                    background-color: #6b6a6a;
+                    text-align: center;
+                    width: 100%;
+                    padding: 20px;
+                }
+                .card {
+                    background-color: rgba(118, 105, 31, 0.6);
+                    padding: 20px;
+                    margin-top: 20px;
+                }
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                .footer {
+                    padding: 5px;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    background: #62491b;
+                    margin-top: 20px;
+                }
+@media screen and (max-width: 1000px) {
+    .leftcolumn{
+    float: left;
+    width:30%;
+    }
+    .middlecolumn{
+        float: left;
+        width: 70%;
+    }
+    .rightcolumn{
+        float: left;
+        width: 100%;
+        padding-right: 5px;
+    }
+    .about, .follow{
+        float: left;
+        width: 50%;
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .leftcolumn, .middlecolumn, .about, .follow {
+        float: left;
+        width: 100%;
+    }
+}
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>Welcome to Kinzang dorji and Yeshey Drayang website</h1>
+            </div>
+            <div class="topnav">
+                <a href="#">info</a>
+                <a href="#">about</a>
+                <a href="#">story</a>
+                <a href="#" style="float:right">Home</a>
+            </div>
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <h3>Director</h3>
+                        <img src="paks.jpg" alt="Kinzang image" width="100%" />
+                        <p>kinzang dorji</p>
+                        <img src="drayang.jpg" alt="drayang image" width="100%" />
+                        <p>Yeshey Drayang</p>
+                    </div>
+                </div>
+                <div class="middlecolumn">
+                    <div class="card">
+                        <h2>Company</h2>
+                        <img src="ccss.png" alt="p" width="100%" />
+                        <p>Introduction</p>
+                        <p>our company is a business where two or more people share ownership. Partners contribute resources, share profits, and are jointly responsible for the company's debts. Decision-making and responsibilities are typically outlined in a partnership agreement.</p>
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="about">
+                        <div class="card">
+                            <h2>About logo</h2>
+                            <img src="wolf.jpg" alt="wolf" width="100%" />
+                            <p>A logo symbolizes collaboration, unity, shared goals, mutual trust, equality, and the blending of diverse strengths and values. </p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <div class="card">
+                            <h3>For more info...</h3>
+                            <p>Contant us!</p>
+                            <p>17786545</p>
+                            <p>kinzang@gamil.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <h2>Thank You</h2>
+            </div>
+        </body>
+        </html>
